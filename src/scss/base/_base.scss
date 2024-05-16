@@ -1,0 +1,65 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background-color;
+}
+
+.flex-container {
+  display: flex;
+  @include respond(tab-land) {
+    display: block;
+    gap: 0;
+  }
+}
+
+.flex-block-1 {
+  position: relative;
+  -moz-z-index: 10;
+  -webkit-z-index: 10;
+  -o-z-index: 10;
+  z-index: 10;
+}
+
+.flex-block-2 {
+  position: relative;
+  -moz-z-index: 5;
+  -webkit-z-index: 5;
+  -o-z-index: 5;
+  z-index: 5;
+}
+
+.textParent {
+  height: 5.9rem;
+  overflow: hidden;
+}
+
+.elements-parent {
+  height: 170px;
+  overflow: hidden;
+  @include respond(phone) {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+.cards-parent {
+  height: 170px;
+  overflow: hidden;
+
+  @include respond(phone) {
+    overflow: visible;
+  }
+}
+
+.blocks-parent {
+  height: 170px;
+  overflow: hidden;
+
+  @include respond(phone) {
+    overflow: visible;
+  }
+}

@@ -1,0 +1,54 @@
+.company {
+  margin: 50px 0;
+  @include respond(tab-land) {
+    margin: 32px 0;
+  }
+  @include respond(phone) {
+    margin: 24px 0;
+  }
+  &__firms {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) );
+    gap: 16px 32px;
+    margin: 0 32px 24px;
+
+    @include respond(big-screen) {
+      max-width: 86%;
+    }
+
+    @include respond(tab-land) {
+      max-width: 95%;
+      margin: 0 24px 24px;
+      gap: 16px 24px;
+    }
+    
+    @include respond(phone) {
+      display: flex;
+      gap: 16px;
+      grid-auto-flow: column;
+    }
+
+  }
+  
+  &__firm {
+    max-width: 240px;
+    max-height: 72px;
+    border-radius: 5px;
+    background-color: $color-white;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $color-border-blocks;
+
+    @include respond(phone) {
+      height: 72px !important;
+    }
+
+    img {
+      max-width: 50%;
+      max-height: 90%;
+    }
+  }
+
+}

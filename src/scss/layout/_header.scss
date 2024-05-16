@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+  padding: 16px 32px;
+
+  @include respond(tab-land) {
+    background-color: $color-white;
+    padding: 24px;
+  }
+
+
+  @include respond(phone) {
+    padding: 18px 16px;
+  }
+}

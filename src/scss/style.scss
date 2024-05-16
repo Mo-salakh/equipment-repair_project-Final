@@ -1,0 +1,25 @@
+@import './abstracts/_mixins.scss';
+@import './abstracts/_variables.scss';
+
+@import './base/_base.scss';
+@import './base/_typography.scss';
+@import './base/_utilities.scss';
+
+
+@import './components/_active-line.scss';
+@import './components/_burger-nav.scss';
+@import './components/_call-info-nav.scss';
+@import './components/_icons.scss';
+@import './components/_navbar.scss';
+@import './components/_swyper.scss';
+
+
+
+
+@import './layout/_company.scss';
+@import './layout/_footer.scss';
+@import './layout/_header.scss';
+@import './layout/_main.scss';
+@import './layout/_price.scss';
+@import './layout/_repairs.scss';
+@import './layout/_service.scss';

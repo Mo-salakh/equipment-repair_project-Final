@@ -1,0 +1,54 @@
+.repairs {
+  margin-bottom: 50px;
+  @include respond(tab-land) {
+    margin-bottom: 32px;
+  }
+  @include respond(phone) {
+    margin-bottom: 24px;
+  }
+
+  &__cards {
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) );
+    gap: 16px 32px;
+    margin-bottom: 24px;
+
+    @include respond(big-screen) {
+      max-width: 85%;
+    }
+
+    @include respond(tab-land) {
+      max-width: 100%;
+      padding: 0 24px;
+      gap: 16px 24px;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      margin-bottom: 16px;
+      padding: 0 16px;
+      gap: 0 16px;
+    }
+
+  }
+
+  &__card {
+    display: grid;
+    width: 240px;
+    height: 160px;
+    background-color: $color-white;
+    border: 1px solid $color-border-blocks;
+    border-radius: 5px;
+    padding: 16px;
+    @include respond(tab-land) {
+      width: 220px;
+    }
+    .circle {
+      align-self: flex-end;
+      justify-self: flex-end;
+    }
+  }
+}
+
+

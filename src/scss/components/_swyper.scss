@@ -1,0 +1,25 @@
+
+.swiper {
+}
+
+.mySwiper {
+
+  @include respond(phone) {
+    height: auto;
+  }
+  
+}
+
+.swiper-wrapper {
+}
+
+
+
+.swiper-pagination {
+  display: none;
+  @include respond(phone) {
+    display: block;
+    position: inherit;
+    margin-top: 16px;
+  }
+}

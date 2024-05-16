@@ -1,0 +1,31 @@
+.footer {
+  margin-bottom: 21px;
+  padding: 0 32px;
+
+  @include respond(tab-land) {  
+    margin-bottom: 25px;
+    padding: 0 24px;
+  }
+
+  @include respond(phone) {
+    padding: 0px;
+    margin-bottom: 19px;
+  }
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(phone) {
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  p {
+    color: $color-gray;
+    text-align: center;
+  }
+
+}

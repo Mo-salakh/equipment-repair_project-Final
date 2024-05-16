@@ -1,0 +1,10 @@
+.active-line {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -25px;
+  background-color: #41F6D7;
+  width: 4px;
+  height: 32px;
+  border-radius: 0 5px 5px 0;
+}

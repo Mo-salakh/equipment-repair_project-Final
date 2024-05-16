@@ -1,0 +1,104 @@
+.price {
+  margin-bottom: 40px;
+
+  &__items {
+    max-width: 85%;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 0 32px;
+    margin-bottom: 32px;
+
+    @include respond(tab-land) {
+      max-width: 94%;
+      padding: 0 24px;
+      margin-bottom: 24px;
+    }
+
+    @include respond(phone) {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 16px;
+      padding: 0 16px;
+    }
+
+  }
+
+  &__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 24px;
+    background-color: $color-white;
+    cursor: pointer;
+    
+    &:not(:last-child) {
+      border-bottom: 2px solid $color-border-blocks;
+    }
+
+    &:first-child {
+      background-color: $background-color;
+      border: none;
+    }
+    
+
+    @include respond(phone) {
+      width: 260px;
+      height: 200px;
+      gap: 16px;
+      grid-template-columns: 86px 86px 86px;
+      grid-template-rows: repeat(3, minmax(38px,60px));
+      padding: 16px;
+      border-radius: 10px;
+
+      &:first-child {
+        display: none;
+      }
+
+      p {
+        word-break: break-all;
+      }
+      
+      p:nth-child(1) {
+        grid-area: 1/1/1/3;
+      }
+
+      p:nth-child(2) {
+        grid-area: 2;
+      }
+
+      p:nth-child(3) {
+        grid-area: 3;
+      }
+
+      button {
+        grid-area: 3;
+      }
+
+    }
+
+  }
+  
+  &__text-hide {
+    display: none;
+    @include respond(phone) {
+      color: $color-gray;
+      display: block; 
+    }
+  }
+  
+  &__text {
+    padding: 0 32px;
+
+    @include respond(tab-land) {
+      padding: 0 24px;
+    }
+
+    @include respond(phone) {
+      padding: 0 16px;
+    }
+  }
+}
+
+

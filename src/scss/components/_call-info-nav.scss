@@ -1,0 +1,71 @@
+.call-navigation,
+.info-navigation {
+  max-width: 320px;
+  height: 100vh;
+  padding: 0 20px;
+  padding-top: 30px;
+  z-index: 10;
+  display: none ;
+  background-color: $color-white;
+  position: relative;
+  right: 0;
+  @include respond(tab-land) {
+    box-shadow: $box-shadow-left;
+  }
+  @include respond(phone) {
+    box-shadow: none;
+  }
+}
+
+.navigation-text {
+  margin: 16px 0 24px;
+  span {
+    color: $color-cerise;
+  }
+  @include respond(phone) {
+    margin: 16px 0;
+  }
+}
+
+.call_close,
+.info_close {
+  cursor: pointer;
+  position: absolute;
+  left: -80px;
+  top: 30px;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  @include respond(phone) {
+    margin-bottom: 40px;
+    position: static;
+    display: inline-block;
+  }
+}
+
+.call_close {
+  @include respond(phone) {
+    margin-bottom: 0;
+  }
+}
+
+//call
+.call-navigation {
+  grid-template-rows: repeat(8, min-content);
+  gap: 16px 0;
+  button {
+    justify-self: flex-end;
+  }
+}
+
+//info 
+.info-navigation {
+  grid-template-rows: repeat(5, min-content);
+  button {
+    justify-self: flex-end;
+  }
+}
+
+
+

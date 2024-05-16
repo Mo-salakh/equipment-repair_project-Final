@@ -1,0 +1,17 @@
+.icon-hide,
+.icon-open {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.icon-hide {
+    background-image: url('../img/icon-hide.png');
+    background-repeat: no-repeat;
+}
+.icon-open {
+    background-image: url('../img/icon-open.png');
+    background-repeat: no-repeat;
+}
